@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         #box1 {
+            border-style: solid;
+            border-width: 2px;
+            border-color: red;
+
+            border: 2px solid red; /* 실무에서 쓴다면 이걸 사용함 */
+         }
+
+         #box2 {
+            border-style: dotted; /* dotted : 점선 */
+            border-width: medium;
+            border-color: blue;
+
+            /* border: medium dotted blue; (편의성은 이게 좀 더 좋음.) */
+         }
+
+         #box3 {
+            border-style: solid;
+            border-width: 10px 5px 5px 10px; /* 상우하좌 */
+            border-width: 10px 5px 5px;
+            /* 상 좌우 하 */
+            border-width: 0 5px; /* 상하 좌우*/
+            border-color: chocolate;
+            border: 0 5px solid chocolate;
+         }
+
+         #box4 {
+            /* border: 2px dashed red; */
+            border-radius: 100px; /* radius: 가세가 둥글둥글해짐 */
+            border-top: 2px dashed red;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="box1">실선 테두리</div>
+      <div id="box2">점선 테두리</div>
+      <div id="box3">짧은 직선 테두리</div>
+      <div id="box4">border 사용하기</div>
+   </body>
+</html>

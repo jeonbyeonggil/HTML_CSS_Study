@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         div {
+            display: inline-block;
+            border: 1px solid black;
+         }
+
+         /* padding의 적용 방향은 margin이랑 동일함. */
+         #padding1 {
+            padding: 20px 30px 40px 50px; /* 상우하좌 */
+         }
+         #padding2 {
+            padding: 20px 30px 40px; /*상 좌우 하 */
+         }
+         #padding3 {
+            padding: 20px 30px; /* 상하 좌우 */
+         }
+         #padding4 {
+            padding: 20px; /* 모든 방향 */
+         }
+         #padding5 {
+            padding-top: 10;
+            padding-bottom: 20;
+            padding-left: 40;
+            padding-right: 20;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="padding1">레드향</div>
+      <div id="padding2">레드향</div>
+      <div id="padding3">레드향</div>
+      <div id="padding4">레드향</div>
+      <div id="padding5">레드향</div>
+   </body>
+</html>

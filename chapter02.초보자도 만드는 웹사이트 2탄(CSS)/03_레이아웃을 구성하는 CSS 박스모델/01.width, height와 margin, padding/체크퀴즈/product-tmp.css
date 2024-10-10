@@ -1,0 +1,17 @@
+#container {
+   width: 600px; /* 상자 너비 */
+   border: 1px solid black;
+   /* 가운데 정렬 할때 width를 줘야한다. */
+   margin: 0 auto;
+}
+table,
+th,
+td {
+   border: 1px solid gray;
+   border-collapse: collapse;
+}
+th,
+td {
+   border: 1px solid gray;
+   padding: 10px 20px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         #container {
+            width: 500px;
+            margin: 20px auto;
+         }
+         .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+         }
+         #box1 {
+            background-color: #4cff00;
+            border: 1px solid transparent; /* 투명한 선 */
+            animation-name: shape;
+            animation-duration: 3s;
+            animation-delay: 2s; /* 2초 뒤에 실행 */
+            /* animation-iteration-count: infinite; */
+            /* 무한대로 실행 */
+            animation-timing-function: linear;
+         }
+         #box2 {
+            background-color: #8f06b0;
+            border: 1px solid transparent;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            /* 홀수 번째는 normal(from -> to로) 짝수
+            번째는 reverse(to -> from) */
+
+            /* 홀수 번째는 reverse(to -> from) 짝수
+            번째는 normal(from -> to로) */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+         }
+
+         @keyframes shape {
+            /* shape 애니메이션 정의 */
+            from {
+               border: 1px solid transparent;
+            }
+            50% {
+               border: 10px solid red;
+            }
+            to {
+               border: 1px solid #000;
+               border-radius: 50%;
+               animation-timing-function: ease-in;
+            }
+         }
+
+         @keyframes rotate {
+            /* rotate 애니메이션 정의 */
+            from {
+               transform: rotate(0deg);
+            }
+            50% {
+               border: 10px solid red;
+            }
+            to {
+               transform: rotate(45deg);
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <div class="box" id="box1"></div>
+         <div class="box" id="box2"></div>
+      </div>
+   </body>
+</html>
